@@ -1,0 +1,52 @@
+# wardrobe: .
+# distro: arch
+# costume: colibri
+---
+name: colibri
+description: >-
+  desktop xfce4 plus all that I need to develop eggs, firmwares and anydesk
+  repos
+author: artisan
+release: 0.0.1
+distributions:
+  - rolling
+sequence:
+  repositories:
+    update: true
+    upgrade: true
+
+  packages:
+    - firefox 
+    - lightdm 
+    - lightdm-gtk-greeter     
+    - network-manager-applet 
+    - polkit-gnome 
+    - shellcheck 
+    - spice-vdagent 
+    - unzip 
+    - xarchiver 
+    - xdg-user-dirs 
+    - xfce4
+    - xfce4-goodies
+    - xorg-apps
+    - xorg-server 
+    - zenity
+
+  accessories:
+    - eggs-dev
+
+customize:
+  dirs: true
+  scripts:
+  # arch
+  - groupadd -r autologin
+  - gpasswd -a "${SUDO_USER}" autologin
+  - systemctl enable NetworkManager
+  - systemctl enable lightdm
+
+  # standard
+  - ../../scripts/config_desktop_link.sh
+  - ../../scripts/config_lightdm.sh
+  - ../../scripts/hostname.sh
+
+reboot: true
