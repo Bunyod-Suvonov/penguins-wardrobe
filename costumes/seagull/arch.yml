@@ -4,7 +4,7 @@
 name: seagull
 description: mutter based compositor for kiosks
 author: artisan
-release: 0.0.2
+release: 0.0.1
 distributions: 
 - rolling
 sequence:
@@ -38,8 +38,14 @@ sequence:
 customize:
   dirs: true
   scripts:
-    - ../../scripts/config_desktop_link.sh
-    - ../../scripts/config_gdm3.sh
-    - ../../scripts/hostname.sh
+  # arch
+  - systemctl enable NetworkManager
+  - systemctl enable lightdm
+  - groupadd -r autologin
+  - gpasswd -a "${SUDO_USER}" autologin
+  # standard
+  - ../../scripts/config_desktop_link.sh
+  - ../../scripts/config_gdm3.sh
+  - ../../scripts/hostname.sh
     
 reboot: true
