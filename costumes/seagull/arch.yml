@@ -13,29 +13,13 @@ sequence:
     update: true
     upgrade: true
   packages:
-    - cmake
-    - firefox
     - gnome
     - gdm
-    - gnome-control-center
-    - gnome-keyring
-    - gnome-session
-    - gnome-terminal
-    - libgnome-desktop-4-dev
-    - libibus-1.0-dev
-    - libmutter-11-dev
-    - libsystemd-dev
-    - meson
-    - nautilus
-    - pkg-config
-    - spice-vdagent
-    - translate-toolkit
-    - zenity
   accessories:
     - base
     - eggs-dev
     # firmwares-light
-    - waydroid
+    # waydroid
 customize:
   dirs: true
   scripts:
