@@ -17,7 +17,7 @@ sequence:
     - firefox
     - gnome
     - gdm
-     gnome-control-center
+    - gnome-control-center
     - gnome-keyring
     - gnome-session
     - gnome-terminal
