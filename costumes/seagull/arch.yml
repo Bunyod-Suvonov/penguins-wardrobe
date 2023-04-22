@@ -15,17 +15,18 @@ sequence:
   packages_no_install_recommends:
     - cmake
     - firefox
-    - gdm3
-    - gnome-control-center
-    - gnome-keyring
-    - gnome-session
-    - gnome-terminal
-    - libgnome-desktop-4-dev
-    - libibus-1.0-dev
-    - libmutter-11-dev
-    - libsystemd-dev
-    - meson
-    - nautilus
+    - gnome
+    #- gdm
+    # gnome-control-center
+    #- gnome-keyring
+    #- gnome-session
+    #- gnome-terminal
+    #- libgnome-desktop-4-dev
+    #- libibus-1.0-dev
+    #- libmutter-11-dev
+    #- libsystemd-dev
+    #- meson
+    #- nautilus
     - pkg-config
     - spice-vdagent
     - translate-toolkit
@@ -40,7 +41,7 @@ customize:
   scripts:
   # arch
   - systemctl enable NetworkManager
-  - systemctl enable lightdm
+  - systemctl enable gdm
   - groupadd -r autologin
   - gpasswd -a "${SUDO_USER}" autologin
   # standard
