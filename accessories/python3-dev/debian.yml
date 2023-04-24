@@ -10,9 +10,6 @@ distributions:
   - chimaera
   - daedalus
   - bionic  
-  - focal
-  - jammy
-  - kinetic
 sequence:
   packages:
     - appstream-util
