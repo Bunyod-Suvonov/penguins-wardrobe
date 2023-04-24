@@ -9,7 +9,6 @@ distributions:
 - jammy
 sequence:
   repositories:
-    sources_list:
     update: true
     upgrade: true
   packages_no_install_recommends:
