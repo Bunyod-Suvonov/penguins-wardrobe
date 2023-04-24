@@ -6,7 +6,7 @@ description: mutter based compositor for kiosks
 author: artisan
 release: 0.0.2
 distributions: 
-- bookworm
+- jammy
 sequence:
   repositories:
     sources_list:
