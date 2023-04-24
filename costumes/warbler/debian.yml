@@ -29,7 +29,7 @@ sequence:
     - sddm-theme-breeze
     - systemsettings
   accessories:
-    - ./python3-dev
+    - python3-dev
     - base
     - eggs-dev
     # firmwares-light
