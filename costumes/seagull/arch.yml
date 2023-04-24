@@ -9,14 +9,13 @@ distributions:
 - rolling
 sequence:
   repositories:
-    sources_list:
     update: true
     upgrade: true
   packages:
     - gnome
     - gdm
   accessories:
-    - base
+    # base
     - eggs-dev
     # firmwares-light
     # waydroid
