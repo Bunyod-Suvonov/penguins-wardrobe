@@ -2,20 +2,29 @@
 
 Boot archiso from virtual machine, then:
 
-```
-passwod
-```
+`pacman -Sy git`
 
-```
-ip a
-```
+`git clone https://github.com/pieroproietti/penguins-wardrobe`
 
-Then, from the host:
-```
-ssh root@192.168.1.214
-```
-then
+`cd penguins-wardrobe/naked/arch`
 
-```
-archinstall --config ~/.wardrobe/naked/arch/eggs_configuration.json --creds ~/.wardrobe/naked/arch/eggs_credentials.json --disk_layouts ~/.wardrobe/naked/arch/eggs_disk_layout.json
-```
+`install-naked.sh`
+
+
+Reboot and on the new machineç
+
+`pacman -Sy git`
+
+`git clone https://github.com/pieroproietti/penguins-wardrobe`
+
+`cd penguins-wardrobe/naked/arch`
+
+`install-yay.sh`
+
+`yay penguins-eggs`
+
+`sudo eggs tools clean`
+
+`sudo eggs dad -d`
+
+
