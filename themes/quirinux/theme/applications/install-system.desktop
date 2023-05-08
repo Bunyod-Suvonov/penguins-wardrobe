@@ -4,9 +4,9 @@ Version=1.0
 Name=Install Quirinux
 Comment=Install system on hard disk
 
-Exec=/sbin/install-debian
-Keywords=calamares;system;install;debian;installer;quirinux
-Icon=install-debian
+Exec=/sbin/install-system.sh
+Keywords=calamares;system;install
+Icon=install-system
 Terminal=false
 Categories=Qt;System;
 StartupWMClass=calamares
