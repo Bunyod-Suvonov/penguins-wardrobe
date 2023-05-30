@@ -1,0 +1,8 @@
+# Debian Buster
+# sources-yolk
+---
+type: "job"
+name: "blissos"
+interface: "process"
+command: "/usr/sbin/blissos.sh"
+timeout: 600
