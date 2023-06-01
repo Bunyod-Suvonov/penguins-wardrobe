@@ -6,7 +6,7 @@ It's too hard and long for me to have differents translation of this documentati
 
 ## Documentation
 
-Documentation of penguins-wardrobe was moved to [penguins-eggs.net](https://penguins-eggs.net/docs/Tutorial/penguins-wardrobe).
+Documentation of penguins-wardrobe was moved to [penguins-eggs.net](https://penguins-eggs.net/docs/Tutorial/wardrobe-users-guide).
 
 # More informations
 You can contact me by [mail](mailto://pieroproietti@gmail.com) or follow me on 
