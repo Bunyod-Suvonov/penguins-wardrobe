@@ -57,10 +57,13 @@ sequence:
       - shellprocess@add386arch
       - packages
       - removeuser
-      #  - shellprocess@logs
-      - cleanup
       - sources-yolk-undo
-      - blissos 
+      - cleanup
+      # bliss-modules
+      - bliss-install
+      - bliss-data-img
+      - bliss-bootloader
+      # bliss-end
       - umount
   - show:
       - finished

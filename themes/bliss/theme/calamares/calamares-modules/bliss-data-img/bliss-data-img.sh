@@ -2,6 +2,8 @@
 
 CHROOT=$(mount | grep proc | grep calamares | awk '{print $3}' | sed -e "s#/proc##g")
 
+echo "bliss-data-image"
+
 # check to see if $CHROOT/blissos/data.img exists already, if not create it
 if [ ! -f "$CHROOT/blissos/data.img" ]; then
 	# Ask user what size they would like their data.img to be (4G,6G,8G,10G,12G,14G,16G, or other)

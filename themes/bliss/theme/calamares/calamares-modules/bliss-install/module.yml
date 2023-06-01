@@ -1,0 +1,8 @@
+# Debian Buster
+# sources-yolk
+---
+type: "job"
+name: "bliss-install"
+interface: "process"
+command: "/usr/sbin/bliss-install.sh"
+timeout: 600

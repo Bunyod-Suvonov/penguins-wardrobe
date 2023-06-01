@@ -1,0 +1,7 @@
+# bliss-dafa-img
+---
+type: "job"
+name: "bliss-data-img"
+interface: "process"
+command: "/usr/sbin/bliss-data-img.sh"
+timeout: 600
