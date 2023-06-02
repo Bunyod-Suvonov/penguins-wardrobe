@@ -6,6 +6,8 @@ This is a special theme, for bliss go a Linux XFCE installer for blissos.
 
 `sudo eggs produce --theme /path/to/bliss`
 
+Normally since it is complex for me to type in the whole theme path, I first find the path using `ls` and autocomplete, for example: `ls .wardrobe/theme/bliss/` or `ls .penguins-wardrobe/theme/bliss`, then I delete the `ls` command and add the real one: `sudo eggs produce --theme .penguins-wardrobe/theme/bliss`
+
 ## custom calamares-modules **ccm**
 
 As special theme, include `settings.conf` and custom calamares-modules (ccm). It's is based on the Ubuntu focal version and can't be used for Debian, becouse there is not just branding but logic too.
