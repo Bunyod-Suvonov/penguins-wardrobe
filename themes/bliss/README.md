@@ -14,7 +14,7 @@ As special theme, include settings.conf and his particular calamares-modules. It
 * bliss-data-img
 * bliss-bootloader
 
-To work this modules must to be build from `src/classes/incubation/distros/focal.ts` on penguins-eggs.
+To work this modules must to be included on `src/classes/incubation/distros/focal.ts` on penguins-eggs. If we want to use krill (CLI installer) we must include them on `/src/krill/krill-sequence.tsx`, loot the note on it.
 
 You can find this modules inside theme/calamares/calamares-modules, they will by copied on `/usr/lib/x86_64-linux-gnu/calamares/modules/` building the iso using this theme.
 
