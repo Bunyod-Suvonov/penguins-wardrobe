@@ -4,5 +4,5 @@
 type: "job"
 name: "ccm-bootloader"
 interface: "process"
-command: "/usr/sbin/ccmbootloader.sh"
+command: "/usr/sbin/ccm-bootloader.sh"
 timeout: 600
