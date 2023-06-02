@@ -6,21 +6,24 @@ This is a special theme, for bliss go a Linux XFCE installer for blissos.
 
 `sudo eggs produce --theme /path/to/bliss`
 
-## ccm Custom calamares-modules
+## custom calamares-modules **ccm**
 
-As special theme, include settings.conf and custom calamares-modules (ccm). It's is based on the Ubuntu focal version and can't be used for Debian, becouse there is not just branding but logic too.
+As special theme, include `settings.conf` and custom calamares-modules (ccm). It's is based on the Ubuntu focal version and can't be used for Debian, becouse there is not just branding but logic too.
 
-* ccm-install
-* ccm-data-img
-* ccm-bootloader
+* ccm-install (skeleton)
+* ccm-data-img (actually the only implemented)
+* ccm-bootloader (skeleton)
 
-To work ccm definition must to be included on `src/classes/incubation/distros/focal.ts` on penguins-eggs. 
+ccm work actually just on Ubuntu and Debian: they are copied to `/usr/lib/x86_64-linux-gnu/calamares/modules/` by the code in [focal.ts](https://github.com/pieroproietti/penguins-eggs/blob/4f1b9c537a2e182b5a5b89c09f22821e0f6195d0/src/classes/incubation/distros/focal.ts#L98) on penguins-eggs. 
 
-To use ccm with krill (CLI installer) we must to be included on `/src/krill/krill-sequence.tsx`.
+They can be used with krill (CLI installer) too, and are evaluated from [krill-sequence.tsx](https://github.com/pieroproietti/penguins-eggs/blob/4f1b9c537a2e182b5a5b89c09f22821e0f6195d0/src/krill/krill-sequence.tsx#L630) on penguins-eggs.
 
-You can find this modules inside theme/calamares/calamares-modules, they will by copied on `/usr/lib/x86_64-linux-gnu/calamares/modules/` building the iso using this theme.
+You can find this modules inside ./theme/calamares/calamares-modules, they will by copied on `/usr/lib/x86_64-linux-gnu/calamares/modules/` building the iso using this theme.
+
+prefix `ccm-` is mandatory and can be named from the action they, for example `ccm-data-img`
 
 ## bliss calamares settings.conf
 
-Included under theme/calamares we have settings.yml, this file will be copied under /etc/calamares/settings.conf building the iso using this theme.
+Included under this theme on `theme/calamares` we have `settings.yml`, this file will be copied under `/etc/calamares/settings.conf` building the iso using this theme.
+
 
