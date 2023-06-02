@@ -59,11 +59,11 @@ sequence:
       - removeuser
       - sources-yolk-undo
       - cleanup
-      # bliss-modules
-      - bliss-install
-      - bliss-data-img
-      - bliss-bootloader
-      # bliss-end
+      # custom-calamares-modules injection
+      - ccm-install
+      - ccm-data-img
+      - ccm-bootloader
+      # ccm-end
       - umount
   - show:
       - finished
