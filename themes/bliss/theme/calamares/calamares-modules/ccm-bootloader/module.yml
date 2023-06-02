@@ -2,7 +2,7 @@
 # sources-yolk
 ---
 type: "job"
-name: "bliss-install"
+name: "ccm-bootloader"
 interface: "process"
-command: "/usr/sbin/bliss-install.sh"
+command: "/usr/sbin/ccmbootloader.sh"
 timeout: 600

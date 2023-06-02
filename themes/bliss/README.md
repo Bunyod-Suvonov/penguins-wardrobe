@@ -6,15 +6,17 @@ This is a special theme, for bliss go a Linux XFCE installer for blissos.
 
 `sudo eggs produce --theme /path/to/bliss`
 
-## bliss calamares-modules
+## ccm Custom calamares-modules
 
-As special theme, include settings.conf and his particular calamares-modules. It's is based on the Ubuntu focal version and can't be used for Debian, becouse there is not just branding but logic too.
+As special theme, include settings.conf and custom calamares-modules (ccm). It's is based on the Ubuntu focal version and can't be used for Debian, becouse there is not just branding but logic too.
 
-* bliss-install
-* bliss-data-img
-* bliss-bootloader
+* ccm-install
+* ccm-data-img
+* ccm-bootloader
 
-To work this modules must to be included on `src/classes/incubation/distros/focal.ts` on penguins-eggs. If we want to use krill (CLI installer) we must include them on `/src/krill/krill-sequence.tsx`, loot the note on it.
+To work ccm definition must to be included on `src/classes/incubation/distros/focal.ts` on penguins-eggs. 
+
+To use ccm with krill (CLI installer) we must to be included on `/src/krill/krill-sequence.tsx`.
 
 You can find this modules inside theme/calamares/calamares-modules, they will by copied on `/usr/lib/x86_64-linux-gnu/calamares/modules/` building the iso using this theme.
 

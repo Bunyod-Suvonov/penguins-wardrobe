@@ -2,4 +2,4 @@
 
 CHROOT=$(mount | grep proc | grep calamares | awk '{print $3}' | sed -e "s#/proc##g")
 
-echo "bliss-install"
+echo "ccm-bbotloader"
