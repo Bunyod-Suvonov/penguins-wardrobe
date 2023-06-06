@@ -28,4 +28,12 @@ prefix `ccm-` is mandatory and can be named from the action they, for example `c
 
 Included under this theme on `theme/calamares` we have `settings.yml`, this file will be copied under `/etc/calamares/settings.conf` building the iso using this theme.
 
+NOTE: 
+
+I'm working now to remove the need to have a complete settings.yml but just a short cfs.yml
+
+Custom Final Steps will be placed on settings.conf
+
+But it's just an idea for now...
+
 
