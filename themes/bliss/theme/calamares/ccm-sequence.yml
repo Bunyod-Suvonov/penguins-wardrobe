@@ -1,0 +1,8 @@
+# custom-calamares-modules
+# ccm-sequence will added  just before umount:
+# on /etc/calamares/settings.conf
+---
+- ccm-install
+- ccm-data-img
+- ccm-bootloader
+
