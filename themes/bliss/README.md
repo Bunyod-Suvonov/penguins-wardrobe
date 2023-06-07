@@ -1,6 +1,6 @@
 # Bliss
 
-This is a special theme, for Bliss Go a Linux XFCE installer for blissOS.
+This is a special theme, made for Bliss Go a Linux XFCE installer for blissOS.
 
 ## Usage
 
