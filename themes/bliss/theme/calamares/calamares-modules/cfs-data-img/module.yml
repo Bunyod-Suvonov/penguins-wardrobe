@@ -3,5 +3,5 @@
 type: "job"
 name: "ccm-data-img"
 interface: "process"
-command: "/usr/sbin/ccm-data-img.sh"
+command: "/usr/sbin/cfs-data-img.sh"
 timeout: 600

@@ -2,7 +2,7 @@
 
 CHROOT=$(mount | grep proc | grep calamares | awk '{print $3}' | sed -e "s#/proc##g")
 
-echo "bliss-data-image"
+echo "cfs-data-img"
 
 # check to see if $CHROOT/blissos/data.img exists already, if not create it
 if [ ! -f "$CHROOT/blissos/data.img" ]; then
