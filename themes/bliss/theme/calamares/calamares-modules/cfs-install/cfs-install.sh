@@ -6,6 +6,16 @@ echo "cfs-install"
 
 SCRIPT_PATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 SOURCE_NAME="blissos"
+
+if [ ! -d "/media/iso" ]; then
+    echo "creating /media/iso"
+    mkdir -p /media/iso
+else
+	echo "/media/iso folder found"
+fi
+mount /dev/sdb1 /media/iso
+ISO_PATH=/media/iso
+
 # First, we check for a .iso file in /updates/blissos 
 # If found we use that as the path to the .iso file
 if [ -f "$/updates/blissos/*.iso" ]; then
