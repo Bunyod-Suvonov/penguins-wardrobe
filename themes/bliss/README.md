@@ -18,7 +18,7 @@ They live in the theme and will be included on `/etc/calamares/settings.conf` ju
 * cfm-data-img (actually the only working)
 * cfm-bootloader (skeleton)
 
-cfm work on Debian, Ubuntu and Arch without any distinctions, they are just bash scripts and thanks to krill - extended lately to Arch - must to work on all these distros and derivated. 
+cfm work on Debian, Ubuntu and Arch without any distinctions, they are just bash scripts and thanks to calamares and krill - extended lately to Arch too - must to work on all these distros and derivated giving confortable GUI installation or fast CLI (destructive) installation .
 
 cfm modules are copied to `/usr/lib/x86_64-linux-gnu/calamares/modules/` by the commands `eggs produce --theme ./wardrobe/vendors/bliss` or `eggs calamares --theme ./wardrobe/addons/bliss`.
 
