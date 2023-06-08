@@ -10,7 +10,8 @@ if [ ! -f "$CHROOT/blissos/data.img" ]; then
 	REQUIRED_PKG="zenity"
 	PKG_OK=$(dpkg-query -W --showformat='${Status}\n' $REQUIRED_PKG|grep "install ok installed")
 	echo Checking for $REQUIRED_PKG: $PKG_OK
-	size=$(dialog --title "Create Bliss OS data.img" --inputbox "Enter the size would you like your data.img to be? (4G, 8G, 12G, 16G, or other):" 8 40)
+	size=$(zenity --entry --title="Create Bliss OS data.img" --text="Enter the size would you like your data.img to be? (4G, 8G, 12G, 16G, or other):" --entry-text "8G")
+	# size=$(dialog --title "Create Bliss OS data.img" --inputbox "Enter the size would you like your data.img to be? (4G, 8G, 12G, 16G, or other):" 8 40)
 	echo "Selected: $size"
 	if [ "$size" == "" ]; then
 		echo "blank value found. Exiting"
