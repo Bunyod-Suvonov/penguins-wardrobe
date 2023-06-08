@@ -2,7 +2,7 @@
 
 CHROOT=$(mount | grep proc | grep calamares | awk '{print $3}' | sed -e "s#/proc##g")
 SOURCE_NAME="blissos"
-echo "cfs-botloader"
+echo "cfs-bootloader"
 
 # search $CHROOT/etc/grub.d/40_custom to see if we need to add the custom menu
 if [ -f "$CHROOT/etc/grub.d/40_custom" ]; then
@@ -41,6 +41,6 @@ menuentry "BlissOS PC-Mode (Intel) w/ FFMPEG" {
 }
 
 EOF
-sudo update-grub
+chroot $CHROOT update-grub
 fi
 fi
