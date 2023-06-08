@@ -58,7 +58,7 @@ elif [ -f "/mnt/iso/system.sfs" ]; then
     # unmount the system.sfs file
     umount /mnt/sfs
 fi
-if [ ! -f "/blissos/system.img" ]; then
+if [ ! -f "$CHROOT/blissos/system.img" ]; then
 	echo "Somethings wrong, exiting"
 	exit 1
 fi
