@@ -7,14 +7,14 @@ echo "cfs-install"
 SCRIPT_PATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 SOURCE_NAME="blissos"
 
-if [ ! -d "$CHROOT/media/iso" ]; then
-    echo "creating /media/iso"
-    mkdir -p $CHROOT/media/iso
+if [ ! -d "$CHROOT/sdb1/iso" ]; then
+    echo "creating /sdb1"
+    mkdir -p /sdb1
 else
-	echo "$CHROOT/media/iso folder found"
+	echo "/sdb1 folder found"
 fi
-mount /dev/sdb1 $CHROOT/media/iso
-ISO_PATH=$CHROOT/media/iso
+mount /dev/sdb1 /sdb1
+ISO_PATH=/sdb1/Bliss-v15.8.5-x86_64-OFFICIAL-foss-20230331.iso
 
 # First, we check for a .iso file in /updates/blissos 
 # If found we use that as the path to the .iso file
