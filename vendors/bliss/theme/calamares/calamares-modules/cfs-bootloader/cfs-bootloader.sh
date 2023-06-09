@@ -41,7 +41,14 @@ menuentry "BlissOS PC-Mode (Intel) w/ FFMPEG" {
 }
 
 EOF
-#chroot $CHROOT update-grub
-chroot $CHROOT grub-mkconfig -o /boot/grub/grub.cfg
+
+# Arch and Debian update-grub
+if [[ -z ${CHROOT} ]];
+    echo "CHROOT a is not set"
+    grub-mkconfig -o /boot/grub/grub.cfg
+else
+    chroot $CHROOT grub-mkconfig -o /boot/grub/grub.cfg
+fi
+
 fi
 fi
