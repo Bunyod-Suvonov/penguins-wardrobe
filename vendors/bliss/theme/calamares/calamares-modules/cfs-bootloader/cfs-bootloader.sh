@@ -41,6 +41,7 @@ menuentry "BlissOS PC-Mode (Intel) w/ FFMPEG" {
 }
 
 EOF
-chroot $CHROOT update-grub
+#chroot $CHROOT update-grub
+chroot $CHROOT grub-mkconfig -o /boot/grub/grub.cfg
 fi
 fi
