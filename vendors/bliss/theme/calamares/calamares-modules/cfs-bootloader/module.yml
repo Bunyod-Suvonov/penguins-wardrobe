@@ -2,7 +2,7 @@
 # sources-yolk
 ---
 type: "job"
-name: "ccm-bootloader"
+name: "cfs-bootloader"
 interface: "process"
-command: "/usr/sbin/ccm-bootloader.sh"
+command: "/usr/sbin/cfs-bootloader.sh"
 timeout: 600

@@ -2,19 +2,19 @@
 
 CHROOT=$(mount | grep proc | grep calamares | awk '{print $3}' | sed -e "s#/proc##g")
 SOURCE_NAME="blissos"
-echo "ccm-bbotloader"
+echo "cfs-bootloader"
 
-# search ${CHROOT}/etc/grub.d/40_custom to see if we need to add the custom menu
-if [ -f ${CHROOT}/etc/grub.d/40_custom ]; then
-# Check for any mention of BlissOS in ${CHROOT}/etc/grub.d/40_custom
-BLISS_MENTION=$(grep "BlissOS" ${CHROOT}/etc/grub.d/40_custom)
+# search $CHROOT/etc/grub.d/40_custom to see if we need to add the custom menu
+if [ -f "$CHROOT/etc/grub.d/40_custom" ]; then
+# Check for any mention of BlissOS in $CHROOT/etc/grub.d/40_custom
+BLISS_MENTION=$(grep "BlissOS" $CHROOT/etc/grub.d/40_custom)
 
-# If no mention of BlissOS in ${CHROOT}/etc/grub.d/40_custom
+# If no mention of BlissOS in $CHROOT/etc/grub.d/40_custom
 if [ -z "$BLISS_MENTION" ]; then
 
 # GRUB_MENUS
-# sudo cat >> ${CHROOT}/etc/grub.d/40_custom<< EOF
-sudo tee -a ${CHROOT}/etc/grub.d/40_custom << EOF
+# sudo cat >> $CHROOT/etc/grub.d/40_custom<< EOF
+sudo tee -a $CHROOT/etc/grub.d/40_custom << EOF
 
 menuentry "BlissOS (Default) w/ FFMPEG" { 
     set SOURCE_NAME="blissos" search --set=root --file /$SOURCE_NAME/kernel 
@@ -42,7 +42,13 @@ menuentry "BlissOS PC-Mode (Intel) w/ FFMPEG" {
 
 EOF
 
-sudo update-grub
+# Arch and Debian update-grub
+if [[ -z ${CHROOT} ]]; then
+    echo "CHROOT a is not set"
+    grub-mkconfig -o /boot/grub/grub.cfg
+else
+    chroot $CHROOT grub-mkconfig -o /boot/grub/grub.cfg
+fi
 
 fi
 fi
