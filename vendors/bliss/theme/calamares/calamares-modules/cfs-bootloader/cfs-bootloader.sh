@@ -12,8 +12,8 @@ BLISS_MENTION=$(grep "BlissOS" ${CHROOT}/etc/grub.d/40_custom)
 if [ -z "$BLISS_MENTION" ]; then
 
 # GRUB_MENUS
-# sudo cat >> ${CHROOT}/etc/grub.d/40_custom<< EOF
-sudo tee -a ${CHROOT}/etc/grub.d/40_custom << EOF
+# cat >> ${CHROOT}/etc/grub.d/40_custom<< EOF
+tee -a ${CHROOT}/etc/grub.d/40_custom << EOF
 
 menuentry "BlissOS (Default) w/ FFMPEG" { 
     set SOURCE_NAME="blissos" search --set=root --file /$SOURCE_NAME/kernel 
@@ -41,7 +41,7 @@ menuentry "BlissOS PC-Mode (Intel) w/ FFMPEG" {
 
 EOF
 
-sudo update-grub
+ grub-mkconfig -o /boot/grub/grub.cfg
 
 fi
 fi
