@@ -2,6 +2,8 @@
 
 CHROOT=$(mount | grep proc | grep calamares | awk '{print $3}' | sed -e "s#/proc##g")
 
+echo "ccm-install"
+
 SCRIPT_PATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 SOURCE_NAME="blissos"
 # First, we check for a .iso file in /updates/blissos 

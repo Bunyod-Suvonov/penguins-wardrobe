@@ -2,6 +2,7 @@
 
 CHROOT=$(mount | grep proc | grep calamares | awk '{print $3}' | sed -e "s#/proc##g")
 SOURCE_NAME="blissos"
+echo "ccm-bbotloader"
 
 # search ${CHROOT}/etc/grub.d/40_custom to see if we need to add the custom menu
 if [ -f ${CHROOT}/etc/grub.d/40_custom ]; then
