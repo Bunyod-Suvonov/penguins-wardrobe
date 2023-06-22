@@ -1,8 +1,0 @@
-# Debian Buster
-# sources-yolk
----
-type: "job"
-name: "ccm-install"
-interface: "process"
-command: "/usr/sbin/ccm-install.sh"
-timeout: 600

@@ -1,7 +1,0 @@
-# bliss-dafa-img
----
-type: "job"
-name: "ccm-data-img"
-interface: "process"
-command: "/usr/sbin/ccm-data-img.sh"
-timeout: 600
