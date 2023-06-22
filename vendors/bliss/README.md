@@ -1,25 +1,31 @@
 # Bliss
 
-This is a special theme, made for Bliss Go a Linux XFCE installer for blissOS.
+This is a special theme, for bliss go a Linux XFCE installer for blissos.
 
 ## Usage
 
 `sudo eggs produce --theme /path/to/bliss`
 
-Normally since it is complex for me to type in the whole theme path, I first find the path using `ls` and autocomplete, for example: `ls .wardrobe/theme/bliss/` or `ls penguins-wardrobe/theme/bliss/`, then I delete the `ls` command and add the real one: `sudo eggs produce --theme penguins-wardrobe/theme/bliss/`.
+Normally since it is complex for me to type in the whole theme path, I first find the path using `ls` and autocomplete, for example: `ls .wardrobe/theme/bliss/` or `ls .penguins-wardrobe/theme/bliss`, then I delete the `ls` command and add the real one: `sudo eggs produce --theme .penguins-wardrobe/theme/bliss`
 
-## custom final steps
+## custom calamares-modules **ccm**
 
-cfs.yml is a yaml configuration file for **custom final steps**, executed by calamares or krill just before umount. 
+As special theme, include `settings.conf` and custom calamares-modules (ccm). It's is based on the Ubuntu focal version and can't be used for Debian, becouse there is not just branding but logic too.
 
-They live in the theme and will be included on `/etc/calamares/settings.conf` just before umount. They are named `cfs-something` this is mandatory: krill will analyze settings.conf and will find them for the prefix: `cfs-`. Again, prefix `cfs-` is mandatory and can be named from the action they will do. for example: `cfs-data-img` and so on.
+* ccm-install (skeleton)
+* ccm-data-img (actually the only implemented)
+* ccm-bootloader (skeleton)
 
-* cfs-install 
-* cfs-data-img
-* cfs-bootloader
+ccm work actually just on Ubuntu and Debian: they are copied to `/usr/lib/x86_64-linux-gnu/calamares/modules/` by the code in [focal.ts](https://github.com/pieroproietti/penguins-eggs/blob/4f1b9c537a2e182b5a5b89c09f22821e0f6195d0/src/classes/incubation/distros/focal.ts#L98) on penguins-eggs. 
 
-cfs work on Debian, Ubuntu and Arch without any distinctions, they are just bash scripts and thanks to calamares and krill - extended lately to Arch too - must to work on all these distros and derivated, giving a confortable GUI installation or a fast CLI (destructive) installation .
+They can be used with krill (CLI installer) too, and are evaluated from [krill-sequence.tsx](https://github.com/pieroproietti/penguins-eggs/blob/4f1b9c537a2e182b5a5b89c09f22821e0f6195d0/src/krill/krill-sequence.tsx#L630) on penguins-eggs.
 
-cfs modules are copied to `/usr/lib/x86_64-linux-gnu/calamares/modules/` by the commands `eggs produce --theme ./wardrobe/vendors/bliss` or `eggs calamares --theme ./wardrobe/vendors/bliss`.
+You can find this modules inside ./theme/calamares/calamares-modules, they will by copied on `/usr/lib/x86_64-linux-gnu/calamares/modules/` building the iso using this theme.
 
-You can find `cfs.yml` under the folder `calamares` of the theme. Calamares modules implementations are inside `calamares/calamares-modules`.
+prefix `ccm-` is mandatory and can be named from the action they, for example `ccm-data-img`
+
+## bliss calamares settings.conf
+
+Included under this theme on `theme/calamares` we have `settings.yml`, this file will be copied under `/etc/calamares/settings.conf` building the iso using this theme.
+
+

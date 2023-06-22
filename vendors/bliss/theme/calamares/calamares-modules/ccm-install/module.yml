@@ -2,7 +2,7 @@
 # sources-yolk
 ---
 type: "job"
-name: "cfs-install"
+name: "ccm-install"
 interface: "process"
-command: "/usr/sbin/cfs-install.sh"
+command: "/usr/sbin/ccm-install.sh"
 timeout: 600
