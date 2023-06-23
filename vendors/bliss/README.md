@@ -4,11 +4,13 @@ This is a special theme, for bliss-go a Linux installer for blissDS.
 
 ## Usage
 
-If you download theme with: `eggs wardrobe get`, then `sudo eggs produce --theme bliss`
+If you download theme with command: `eggs wardrobe get`, then you can write just `sudo eggs produce --theme bliss`
 
 You can write the full path too: `sudo eggs produce --theme ./my-theme-bliss`
 
-## calamares final settings **cfs**
+I use to have a `bliss-root` folder with the follow directory inside `/updates/blissos/update.zip` and `blissos`, this `bliss-root` will be copied on the root of the machine before to create the image.
+
+## calamares final settings
 
 As special theme, include `calamares final settings`
 
@@ -18,12 +20,13 @@ As special theme, include `calamares final settings`
 
 cfs work actually on Arch, Debian and Ubuntu. They are copied to `/usr/lib/x86_64-linux-gnu/calamares/modules/` by the code in [focal.ts](https://github.com/pieroproietti/penguins-eggs/blob/4f1b9c537a2e182b5a5b89c09f22821e0f6195d0/src/classes/incubation/distros/focal.ts#L98) on penguins-eggs or in others places depending of the distro/codename.
 
-cfs can be used with krill (CLI installer) too, and are evaluated from [krill-sequence.tsx](https://github.com/pieroproietti/penguins-eggs/blob/4f1b9c537a2e182b5a5b89c09f22821e0f6195d0/src/krill/krill-sequence.tsx#L630) on penguins-eggs.
+cfs can be used with calamares and krill (CLI installer) too, on krill they are evaluated from [krill-sequence.tsx](https://github.com/pieroproietti/penguins-eggs/blob/4f1b9c537a2e182b5a5b89c09f22821e0f6195d0/src/krill/krill-sequence.tsx#L630).
 
-You can find this modules inside the folder `./theme/calamares/calamares-modules` and will be copied under `/usr/lib/x86_64-linux-gnu/calamares/modules/` building an ISO using this theme.
+You can find this modules inside the folder `./theme/calamares/calamares-modules` and will be copied under `/usr/lib/x86_64-linux-gnu/calamares/modules/` building an ISO using the theme.
 
-Note: prefix `cfs-` is mandatory  and can be named from the action they do, for example `cfs-data-img`
+Note: prefix `cfs-` is mandatory, they are usually named named from the action they do, for example `cfs-data-img`
 
-# no more changes on settings.conf
+# no more changes necessary on settings.conf
 
-cfs will be automatically included in standard /etc/calamares/settings.conf, and executed just before umount, so there is no need to change settings.conf.
+**cfs-modules** will be automatically included in standard `/etc/calamares/settings.conf`, and executed immidiatly before umount. There is no more need to register them in settings.conf, they will be immidiatly added in `/etc/calamares/settings.conf` before `umount`.
+
