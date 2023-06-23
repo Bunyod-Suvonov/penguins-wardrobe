@@ -41,7 +41,7 @@ menuentry "BlissOS PC-Mode (Intel) w/ FFMPEG" {
 
 EOF
 
- grub-mkconfig -o /boot/grub/grub.cfg
+grub-mkconfig -o /boot/grub/grub.cfg
 
 fi
 fi
