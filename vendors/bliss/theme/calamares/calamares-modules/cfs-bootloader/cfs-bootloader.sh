@@ -43,7 +43,7 @@ EOF
 
 # Arch and Debian update-grub
 if [[ -z ${CHROOT} ]]; then
-    echo "CHROOT a is not set"
+    echo "CHROOT is not set"
     grub-mkconfig -o /boot/grub/grub.cfg
 else
     chroot $CHROOT grub-mkconfig -o /boot/grub/grub.cfg

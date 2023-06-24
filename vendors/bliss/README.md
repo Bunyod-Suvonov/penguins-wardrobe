@@ -3,7 +3,7 @@
 This is a special theme, for bliss-go a Linux installer for blissDS.
 
 ## Prerequisites
-bliss theme use 7zip and dialog, so they MUST to be present on the system.
+bliss theme use 7zip and zenity or dialog, so they MUST to be present on the system.
 
 I use to have a `bliss-go-root` folder with the follow directory inside `/updates/blissos/update.zip` and `blissos`, this `bliss-go-root` will be copied on the root of the machine before to create the image.
 
