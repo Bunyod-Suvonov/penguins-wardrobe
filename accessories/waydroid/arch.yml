@@ -25,7 +25,7 @@ sequence:
     - wget 
     - xclip
 
-    # check-for-that-we-lacks
+    # here we have to check
     #- ca-certificates
     #- coredhcp-client # Debian 
     #- gir1.2-gtk-3.0 
