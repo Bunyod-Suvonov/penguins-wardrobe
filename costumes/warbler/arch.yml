@@ -34,7 +34,7 @@ customize:
   scripts:
     # arch
     - systemctl enable NetworkManager
-    - systemctl enable sddn
+    - systemctl enable sddm
     - grub-mkconfig -o /boot/grub/grub.cfg
     - ./config_sddm.sh
     - ../../scripts/config_desktop_link.sh
