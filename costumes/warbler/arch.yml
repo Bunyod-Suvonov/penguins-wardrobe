@@ -19,9 +19,9 @@ sequence:
     - plasma-desktop
     - plasma-discover
     - plasma-nm
-    - plasma-workspace-wayland
+    - plasma-wayland-session # different name here
     - sddm
-    - sddm-theme-breeze
+    # sddm-theme-breeze
     - systemsettings
   accessories:
     - base
