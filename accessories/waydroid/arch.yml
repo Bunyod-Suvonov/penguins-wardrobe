@@ -15,6 +15,7 @@ sequence:
     - git 
     - iptables 
     - iw 
+    - linux-zen # need
     - lxc 
     - lzip 
     - net-tools 
@@ -24,18 +25,7 @@ sequence:
     - wget 
     - xclip
 
-    # coredhcp-client \
-    # gir1.2-gtk-3.0 \
-    # gir1.2-gtk-4.0 \
-    # gir1.2-vte-2.91 \
-    # gir1.2-webkit2-4.0 \
-    # libvte-2.91-dev \
-    # network-manager \
-    # python3-gi \
-    # python3-gi-cairo \
-    # python3-pip \
-
-
+    # check-for-that-we-lacks
     #- ca-certificates
     #- coredhcp-client # Debian 
     #- gir1.2-gtk-3.0 
