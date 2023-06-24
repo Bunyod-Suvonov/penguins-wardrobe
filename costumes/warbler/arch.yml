@@ -32,6 +32,10 @@ sequence:
 customize:
   dirs: true
   scripts:
+    # arch
+    - systemctl enable NetworkManager
+    - systemctl enable sddn
+    - grub-mkconfig -o /boot/grub/grub.cfg
     - ./config_sddm.sh
     - ../../scripts/config_desktop_link.sh
     - ../../scripts/hostname.sh
