@@ -15,10 +15,10 @@ sequence:
     - gnome
     - gdm
   accessories:
-    # base
+    - base
     - eggs-dev
     # firmwares-light
-    # waydroid
+    - waydroid
 customize:
   dirs: true
   scripts:
