@@ -13,15 +13,12 @@ sequence:
   packages_no_install_recommends:
     - dolphin
     - firefox-esr
-    - kde-config-sddm
     - kdialog
     - konsole
     - plasma-desktop
-    - plasma-discover
     - plasma-nm
-    - plasma-wayland-session # different name here
+    - plasma-wayland-session
     - sddm
-    # sddm-theme-breeze
     - systemsettings
   accessories:
     - base
