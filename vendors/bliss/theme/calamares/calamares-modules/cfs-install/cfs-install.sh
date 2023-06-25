@@ -13,7 +13,7 @@ else
 	echo -e $(ls ${CHROOT})
 	echo -e $(ls ${CHROOT}/updates)
 	echo -e $(ls ${CHROOT}/updates/blissos)
-	exit 1
+	exit 0 # don't abort it's installed!
 fi
 
 # Check to see if we have a /blissos/ folder already
