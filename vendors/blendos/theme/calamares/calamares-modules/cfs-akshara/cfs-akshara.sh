@@ -2,7 +2,7 @@
 
 CHROOT=$(mount | grep proc | grep calamares | awk '{print $3}' | sed -e "s#/proc##g")
 
-tee -a ${CHROOT}/etc/mkinitcpio.conf << EOF
+tee -a $CHROOT/etc/mkinitcpio.conf << EOF
 MODULES=""
 BINARIES=""
 FILES=""
@@ -11,4 +11,4 @@ COMPRESSION="zstd"
 
 EOF
 
-chroot $CHROOT mkinitcpio -g /boot/initramfs-linux-zen.img
+chroot $CHROOT mkinitcpio /etc/mkinitcpio.conf -g /boot/initramfs-linux-zen.img
