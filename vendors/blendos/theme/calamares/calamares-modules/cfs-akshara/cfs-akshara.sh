@@ -1,11 +1,12 @@
 #!/bin/bash
 
 CHROOT=$(mount | grep proc | grep calamares | awk '{print $3}' | sed -e "s#/proc##g")
-tee -a ${CHROOT}/etc/grub.d/40_custom << EOF
+
+tee -a ${CHROOT}/etc/mkinitcpio.conf << EOF
 MODULES=""
 BINARIES=""
 FILES=""
-HOOKS="base udev aksgara plymouth autodetect modconf block keyboard keymap consolefont filesystems fsck"
+HOOKS="base udev akshara plymouth autodetect modconf block keyboard keymap consolefont filesystems fsck"
 COMPRESSION="zstd"
 
 EOF
