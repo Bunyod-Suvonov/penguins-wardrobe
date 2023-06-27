@@ -2,7 +2,7 @@
 
 CHROOT=$(mount | grep proc | grep calamares | awk '{print $3}' | sed -e "s#/proc##g")
 
-tee -a $CHROOT/etc/mkinitcpio.conf << EOF
+tee $CHROOT/etc/mkinitcpio.conf << EOF
 MODULES=""
 BINARIES=""
 FILES=""
