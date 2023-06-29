@@ -1,8 +1,7 @@
-# PVE
+# eagle
 
 * cfs-pvelocalhost
 * cfs-network
-
 
 # cfs-pvelocalhost
 add to /etc/hosts:
