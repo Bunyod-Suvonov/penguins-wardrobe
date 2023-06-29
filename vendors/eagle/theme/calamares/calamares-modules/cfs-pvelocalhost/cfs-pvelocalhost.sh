@@ -4,8 +4,12 @@ CHROOT=$(mount | grep proc | grep calamares | awk '{print $3}' | sed -e "s#/proc
 IP=$(hostname -I)
 #IP=192.168.1.3
 
-HOSTNAME=$(hostname)
-#HOSTNAME=eagle
+#HOSTNAME=$(hostname)
+HOSTNAME=eagle
+
+cat <<EOF >$CHROOT/etc/hostname
+${HOSTNAME}
+EOF
 
 cat <<EOF >$CHROOT/etc/hosts
 127.0.0.1 localhost localhost.localdomain
