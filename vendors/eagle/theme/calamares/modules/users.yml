@@ -11,9 +11,9 @@ defaultGroups:
   - video
   - plugdev
   - netdev
-  - lpadmin
+  # lpadmin
   - scanner
-  - bluetooth
+  # bluetooth
 autologinGroup: autologin
 sudoersGroup: sudo
 setRootPassword: true
