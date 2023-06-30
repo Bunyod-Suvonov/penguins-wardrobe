@@ -6,9 +6,9 @@ description: desktop cinnamon plus all that we need to enjoy at home and office
 author: artisan
 release: 0.9.1
 distributions:
+  - bookworm
   - bullseye
   - chimaera
-  - jammy
 sequence:
   repositories:
     sources_list:
