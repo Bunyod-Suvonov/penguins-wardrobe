@@ -5,11 +5,11 @@ IP=$(hostname -I)
 #IP=192.168.1.3
 
 #HOSTNAME=$(hostname)
-HOSTNAME=eagle
+HOSTNAME=chroot $CHROOT $(HOSTNAME)
 
-cat <<EOF >$CHROOT/etc/hostname
-${HOSTNAME}
-EOF
+# cat <<EOF >$CHROOT/etc/hostname
+# ${HOSTNAME}
+# EOF
 
 cat <<EOF >$CHROOT/etc/hosts
 127.0.0.1 localhost localhost.localdomain
