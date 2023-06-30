@@ -17,4 +17,5 @@ defaultGroups:
 autologinGroup: autologin
 sudoersGroup: sudo
 setRootPassword: true
-doReusePassword: true
+doReusePassword: false
+
