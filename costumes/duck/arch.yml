@@ -46,9 +46,6 @@ sequence:
     - grafica
     - multimedia
     - office
-  try_accessories:
-    # liquorix
-    # firmwares
 customize:
   dirs: true
   scripts:

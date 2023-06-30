@@ -20,10 +20,9 @@ sequence:
     upgrade: true
   packages:
     - cinnamon-desktop-environment
+    - firefox-esr
     - lightdm
     - spice-vdagent
-  try_packages:
-    - firefox-esr
   accessories:
     - base
     - grafica
