@@ -43,7 +43,7 @@ Presentation
     Slide {
         Image {
             id: reproductiveSystem
-            source: "eagle1.png"
+            source: "eagle.png"
             anchors.centerIn: parent
             anchors.top: background.bottom
             width: 810
@@ -56,9 +56,9 @@ Presentation
             color: "#aa3333"
             anchors.horizontalCenter: reproductiveSystem.horizontalCenter
             anchors.top: background.top
-            text: qsTr("<h1>Penguins' eggs</h1><br/>"+
-                  "<h2>eggs: the reproductive system of penguins!</h2>"+
-                  "<h3>https://penguins-eggs.net</h3>")
+            text: qsTr("<h1>Proxmox VE</h1><br/>"+
+                  "<h3>Proxmox VE is a complete, open-source server management platform for enterprise virtualization</h3>"+
+                  "<h2>https://www.proxmox.com/en/proxmox-ve</h2>")
             wrapMode: Text.WordWrap
             width: 800
             horizontalAlignment: Text.Center
@@ -67,7 +67,7 @@ Presentation
     Slide {
         Image {
             id: startReproduction
-            source: "eagle1.png"
+            source: "eagle.png"
             anchors.centerIn: parent
             anchors.top: background.bottom
             width: 810
@@ -81,8 +81,8 @@ Presentation
             color: "#aa3333"
             anchors.horizontalCenter: startReproduction.horizontalCenter
             anchors.top: background.top
-            text: qsTr("<h1>Penguins' eggs</h1><br/>"+
-                  "<h2>Start the reproduction of your system! Produce yours eggs and simply install them on another computer. You can do it!</h2>")
+            text: qsTr("<h1>Proxmox VE</h1><br/>"+
+                  "<h3>It tightly integrates the KVM hypervisor and Linux Containers (LXC), software-defined storage and networking functionality, on a single platform.</h3>")
             wrapMode: Text.WordWrap
             width: 800
             horizontalAlignment: Text.Center
@@ -92,7 +92,7 @@ Presentation
     Slide {
         Image {
             id: itsYourSystem
-            source: "eagle1.png"
+            source: "eagle.png"
             anchors.centerIn: parent
             anchors.top: background.bottom
             width: 810
@@ -105,8 +105,8 @@ Presentation
             color: "#aa3333"
             anchors.horizontalCenter: itsYourSystem.horizontalCenter
             anchors.top: background.top
-            text: qsTr("<h1>Penguins' eggs</h1><br/>"+
-                  "<h2>It's your system!<br/>Bring it with you and use/install it elsewhere.</h2>")
+            text: qsTr("<h1>Proxmox VE</h1><br/>"+
+                  "<h3>With the integrated web-based user interface you can manage VMs and containers, high availability for clusters, or the integrated disaster recovery tools with ease-</h3>")
             wrapMode: Text.WordWrap
             width: 800
             horizontalAlignment: Text.Center
@@ -116,7 +116,7 @@ Presentation
     Slide {
         Image {
             id: eggsPresentation
-            source: "eagle1.png"
+            source: "eagle.png"
             anchors.centerIn: parent
             anchors.top: background.bottom
             width: 810
@@ -129,8 +129,8 @@ Presentation
             color: "#aa3333"
             anchors.horizontalCenter: eggsPresentation.horizontalCenter
             anchors.top: background.top
-            text: qsTr("<h1>Penguins' eggs</h1><br/>"+
-                  "<h2>Eggs is a terminal tool,<br/>but it's simple and nice. Write eggs without else and get the commands list</h2>")
+            text: qsTr("<h1>Proxmox VE</h1><br/>"+
+                  "<h3>The enterprise-class features and a 100% software-based focus make Proxmox VE the perfect choice to virtualize your IT infrastructure, optimize existing resources, and increase efficiencies with minimal expense</h3>")
             wrapMode: Text.WordWrap
             width: 800
             horizontalAlignment: Text.Center
@@ -140,7 +140,7 @@ Presentation
     Slide {
         Image {
             id: waitHatching
-            source: "eagle1.png"
+            source: "eagle.png"
             anchors.centerIn: parent
             anchors.top: background.bottom
             width: 810
@@ -153,8 +153,8 @@ Presentation
             color: "#aa3333"
             anchors.horizontalCenter: waitHatching.horizontalCenter
             anchors.top: background.top
-            text: qsTr("<h1>Penguins' eggs</h1><br/>"+
-                  "<h2>Please wait, we are hatching...<br/>Don't disturb the process, in few time You will have a new penguin.</h2>")
+            text: qsTr("<h1>Proxmox VE</h1><br/>"+
+                  "<h3>You can easily virtualize even the most demanding of Linux and Windows application workloads, and dynamically scale computing and storage as your needs grow, ensuring that your data center adjusts for future growth.</h3>")
             wrapMode: Text.WordWrap
             width: 800
             horizontalAlignment: Text.Center
@@ -164,7 +164,7 @@ Presentation
     Slide {
         Image {
             id: followPenguins
-            source: "eagle1.png"
+            source: "eagle.png"
             anchors.centerIn: parent
             anchors.top: background.bottom
             width: 810
@@ -177,11 +177,8 @@ Presentation
             color: "#aa3333"
             anchors.horizontalCenter: slide6.horizontalCenter
             anchors.top: background.top
-            text: qsTr("<h1>Penguins' eggs</h1><br/>"+
-                  "<h3>Follow Penguins' eggs development, can be funny.</h3>" +
-                  "<h3>Developers, graphics and testers need feedback and help.</h3>" +
-                  "<h3>Use this tool, enjoy and if you can collaborate.</h3>"+
-                  "<br><h2>That's all peoples!</h2>")
+            text: qsTr("<h1>Proxmox VE</h1><br/>"+
+                  "<h3>Ready to build an open and future-proof data center with Proxmox VE?</h3>")
             wrapMode: Text.WordWrap
             width: 800
             horizontalAlignment: Text.Center
@@ -191,7 +188,7 @@ Presentation
     Slide {
         Image {
             id: createdBy
-            source: "eagle1.png"
+            source: "penguin.png"
             anchors.centerIn: parent
             anchors.top: background.bottom
             width: 810
