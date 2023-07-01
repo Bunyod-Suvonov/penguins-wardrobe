@@ -187,7 +187,7 @@ Presentation
     Slide {
         Image {
             id: createdBy
-            source: "penguin.png"
+            source: "eagle.png"
             anchors.centerIn: parent
             anchors.top: background.bottom
             width: 810
@@ -202,7 +202,7 @@ Presentation
             anchors.top: background.top
             text: qsTr("<h1>Penguins' eggs</h1><br/>"+
                   "<h2>Created by Piero Proietti</h2><br/>"+
-                  "<h4>issues: htts://github.com/pieroproietti/penguins-eggs</h4>"+
+                  "<h4>issues: htts://github.com/pieroproietti/penguins-eggs</h4><br/>"+
                   "<h3>email: piero.proietti@gmail.com</h3>")
             wrapMode: Text.WordWrap
             width: 800
