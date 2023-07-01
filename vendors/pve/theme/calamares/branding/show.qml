@@ -53,11 +53,11 @@ Presentation
          Text {
             font.family: "Helvetica"
             font.pixelSize : 22
-            color: "#00000"
+            color: "#000000"
             anchors.horizontalCenter: reproductiveSystem.horizontalCenter
             anchors.top: background.top
             text: qsTr("<h1>Proxmox VE</h1><br/>"+
-                  "<h3>Proxmox VE is a complete, open-source server management platform for enterprise virtualization</h3>"+
+                  "<h3>Proxmox VE is a complete, open-source server management platform for enterprise virtualization</h3><br/>"+
                   "<h4>https://www.proxmox.com/en/proxmox-ve</h4>")
             wrapMode: Text.WordWrap
             width: 800
@@ -77,7 +77,7 @@ Presentation
          Text {
             font.family: "Helvetica"
             font.pixelSize : 22
-            color: "#00000"
+            color: "#000000"
             anchors.horizontalCenter: startReproduction.horizontalCenter
             anchors.top: background.top
             text: qsTr("<h1>Proxmox VE</h1><br/>"+
@@ -101,7 +101,7 @@ Presentation
          Text {
             font.family: "Helvetica"
             font.pixelSize : 22
-            color: "#00000"
+            color: "#000000"
             anchors.horizontalCenter: itsYourSystem.horizontalCenter
             anchors.top: background.top
             text: qsTr("<h1>Proxmox VE</h1><br/>"+
@@ -125,7 +125,7 @@ Presentation
          Text {
             font.family: "Helvetica"
             font.pixelSize : 22
-            color: "#00000"
+            color: "#000000"
             anchors.horizontalCenter: eggsPresentation.horizontalCenter
             anchors.top: background.top
             text: qsTr("<h1>Proxmox VE</h1><br/>"+
@@ -149,7 +149,7 @@ Presentation
          Text {
             font.family: "Helvetica"
             font.pixelSize : 22
-            color: "#00000"
+            color: "#000000"
             anchors.horizontalCenter: waitHatching.horizontalCenter
             anchors.top: background.top
             text: qsTr("<h1>Proxmox VE</h1><br/>"+
@@ -173,7 +173,7 @@ Presentation
          Text {
             font.family: "Helvetica"
             font.pixelSize : 22
-            color: "#00000"
+            color: "#000000"
             anchors.horizontalCenter: slide6.horizontalCenter
             anchors.top: background.top
             text: qsTr("<h1>Proxmox VE</h1><br/>"+
