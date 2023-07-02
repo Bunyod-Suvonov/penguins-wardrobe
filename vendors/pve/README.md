@@ -1,7 +1,16 @@
-# eagle
+# PVE
 
+Theme for Proxmox VE remaster. 
+
+* cfs-network-dhcp
+* cfs-keygen
 * cfs-pvelocalhost
-* cfs-network
+
+# cfs-network-dhcp
+Just copy live network configuration to `/etc/network/interfaces`.
+
+# cfs-keygen
+recreate keys
 
 # cfs-pvelocalhost
 add to /etc/hosts:
