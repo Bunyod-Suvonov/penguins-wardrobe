@@ -2,7 +2,7 @@
 # again to solve dependencies gtk4
 ---
 name: seagull
-description: mutter based compositor for kiosks
+description: gnome/wayland/waydroid
 author: artisan
 release: 0.0.1
 distributions: 
