@@ -7,7 +7,6 @@ release: 0.0.1
 distributions:
   - bullseye
   - bookworm
-  -rolling
 sequence:
   packages:
     # wi-fi
