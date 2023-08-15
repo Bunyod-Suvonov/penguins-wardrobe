@@ -11,6 +11,7 @@ distributions:
   - bullseye
   - bookworm
   - chimaera
+  - daedalus
 sequence:
   repositories:
     sources_list:

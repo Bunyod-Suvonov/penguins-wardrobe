@@ -5,6 +5,9 @@ description: 'nextcloud'
 author: artisan
 distributions:
   - bullseye
+  - bookworm
+  - chimaera
+  - daedalus
 sequence:
   packages:
   - mariadb-server

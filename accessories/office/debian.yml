@@ -8,6 +8,7 @@ distributions:
   - bullseye
   - buster
   - chimaera
+  - daedalus
   - bionic
   - focal
   - jammy

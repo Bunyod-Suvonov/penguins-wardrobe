@@ -10,6 +10,7 @@ distributions:
   - bookworm
   - bullseye
   - chimaera
+  - daedalus
 sequence:
   packages:
     - gcompris

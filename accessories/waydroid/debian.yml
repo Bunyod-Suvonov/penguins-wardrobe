@@ -8,6 +8,7 @@ distributions:
 - bookworm
 - jammy
 - rolling
+- daedalus
 sequence:
   repositories:
     sources_list:

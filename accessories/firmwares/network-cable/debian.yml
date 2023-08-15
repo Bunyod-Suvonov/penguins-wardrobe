@@ -9,6 +9,8 @@ distributions:
   - bullseye
   - buster
   - chimaera
+  - daedalus
+
 sequence:
   packages:
     - hardinfo # (x11): Displays system information

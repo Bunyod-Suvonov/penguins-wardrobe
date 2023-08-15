@@ -10,7 +10,7 @@ distributions:
   - bullseye
   - buster
   - chimaera
-  - daedalus-ceres
+  - daedalus
   - jammy
   - rolling  
 sequence:

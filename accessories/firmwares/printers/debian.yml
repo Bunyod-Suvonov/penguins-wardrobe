@@ -9,6 +9,8 @@ distributions:
   - bullseye
   - buster
   - chimaera
+  - daedalus
+
 sequence:
   packages:
     - autoconf

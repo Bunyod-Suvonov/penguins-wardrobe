@@ -7,6 +7,9 @@ release: 0.0.1
 distributions:
   - bullseye
   - bookworm
+  - chimaera
+  - daedalus
+
 sequence:
   packages:
     # wi-fi

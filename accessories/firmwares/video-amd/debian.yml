@@ -8,6 +8,7 @@ distributions:
   - bullseye
   - buster
   - chimaera
+  - daedalus
 sequence:
   drivers_video_amd:
     - libdrm-amdgpu1

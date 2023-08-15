@@ -9,6 +9,8 @@ distributions:
   - bullseye
   - buster
   - chimaera
+  - daedalus
+
 sequence:
   packages:
     - dns323-firmware-tools # (otherosfs): build and manipulate firmware images for a range of NAS devices
