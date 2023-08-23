@@ -10,6 +10,7 @@ release: 0.9.1
 distributions:
   - bullseye
   - bookworm
+  - trixie
   - chimaera
   - daedalus
 sequence:
