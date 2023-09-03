@@ -1,6 +1,8 @@
 The repository is a modified version of penguins-wardrobe by @pieroproietti. The repository aims to be a theme for the linux distribution made for UM-SJTU JI
 
+The repository contains only one rendor named TelOS. The TelOS theme is modified to the theme of Debian 12 bookworm to be used by the live iso of JI's distro.
 
+Original README:
 # penguins-wardrobe
 
 It is a repository mainly consisting of .yaml files and simple bash scripts used by eggs to create customizations of Linux systems starting from a minimal image - referred to as "naked" - to achieve a complete system.
