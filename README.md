@@ -1,3 +1,6 @@
+The repository is a modified version of penguins-wardrobe by @pieroproietti. The repository aims to be a theme for the linux distribution made for UM-SJTU JI
+
+
 # penguins-wardrobe
 
 It is a repository mainly consisting of .yaml files and simple bash scripts used by eggs to create customizations of Linux systems starting from a minimal image - referred to as "naked" - to achieve a complete system.
