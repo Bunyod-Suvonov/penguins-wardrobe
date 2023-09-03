@@ -40,8 +40,8 @@ Presentation
         Text {
             anchors.horizontalCenter: background1.horizontalCenter
             anchors.top: background1.bottom
-            text: "Welcome to TeLOS Linux!<br/>"+
-                     "You may have enough time to grab a coffee before auto setup is complete.."
+            text: qsTr("Welcome to Debian GNU/Linux.<br/>"+
+                  "The rest of the installation is automated and should complete in a few minutes.")
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center

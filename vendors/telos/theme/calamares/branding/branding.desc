@@ -1,25 +1,26 @@
 componentName: telos
 welcomeStyleCalamares: true
 strings:
-  productName: TELOS
-  shortProductName: TeLOS
-  version: '2022-01-22'
-  shortVersion: '2022-01-22'
-  versionedName: TeLOS (2022-01-22)
-  shortVersionedName: TELOS 2022-01-22
+  productName: Debian GNU/Linux
+  shortProductName: Debian
+  version: 12 (bookworm)
+  shortVersion: 12
+  versionedName: Debian 12 (bookworm)
+  shortVersionedName: Debian 12
   bootloaderEntryName: Debian
-  productUrl: ''
-  supportUrl: ''
-  bugReportUrl: https://github.com/pieroproietti/penguins-eggs/issues
-  releaseNotesUrl: https://github.com/pieroproietti/penguins-eggs/changelog.md
+  productUrl: https://debian.org
+  supportUrl: https://www.debian.org/support
+  bugReportUrl: https://focs.ji.sjtu.edu.cn/mm/lobby/messages/@b.suvonov
 images:
-  productBanner: banner.png
-  productLogo: telos-logo.png
-  productIcon: telos-logo.png
+  productLogo: debian-logo.png
+  productIcon: debian-logo.png
   productWelcome: welcome.png
-slideshowAPI: 1
+
 slideshow: show.qml
 style:
-  sidebarBackground: '#2c3133'
-  sidebarText: '#FFFFFF'
-  sidebarTextSelect: '#4d7079'
+   sidebarBackground:    "#2c3133"
+   sidebarText:          "#FFFFFF"
+   sidebarTextSelect:    "#4d7079"
+   sidebarTextSelect:    "#292F34"
+
+slideshowAPI: 2
